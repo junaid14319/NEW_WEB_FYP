@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/NEW_WEB_FYP.styles.css" asp-append-version="true" />
+    <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/assets/css/animate.min.css" rel="stylesheet" />
     <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/assets/css/owl.carousel.min.css" rel="stylesheet" />
@@ -17,13 +18,13 @@
     <link href="~/assets/css/themify-icons.css" rel="stylesheet" />
     <link href="~/assets/css/slicknav.css" rel="stylesheet" />
     <link href="~/assets/css/style.css" rel="stylesheet" />
-    <a href="~/assets/css/style.map">~/assets/css/style.map</a>
+    <!--<link href="~/assets/css/main.css" rel="stylesheet" /> -->
+    <a href="~/assets/css/style.map"></a>
     <link href="~/assets/css/gijgo.css" rel="stylesheet" />
     <link href="~/assets/css/slick.css" rel="stylesheet" />
     <link href="~/assets/css/responsive.css" rel="stylesheet" />
     <link href="~/assets/css/magnific-popup.css" rel="stylesheet" />
-    <link href="~/assets/css/main.css" rel="stylesheet" />
-    <a href="~/assets/css/main.map">~/assets/css/main.map</a>
+    <a href="~/assets/css/main.map"></a>
     <link href="~/assets/css/nice-select.css" rel="stylesheet" />
     <link href="~/assets/css/fontawesome-all.min.css" rel="stylesheet" />
 </head>
@@ -36,18 +37,18 @@
                     <div class="container">
                         <div class="col-xl-12">
                             <div class="row d-flex justify-content-between align-items-center">
-                                <div class="header-info-left">
-                                    <ul>
-                                        <li><img src="~assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
-                                        <li><img src="~assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2019</li>
+                                <div class="header-info-left" style="display:flex; justify-content:space-between; flex-direction:row;">
+                                    <ul >
+                                        <li ><img src="~/assets/img/icon/header_icon1.png" alt="">34ºc, Sunny </li>
+                                        <li ><img src="~/assets/img/icon/header_icon1.png" alt="">Tuesday, 18th June, 2019</li>
                                     </ul>
-                                </div>
-                                <div class="header-info-right">
-                                    <ul class="header-social">
+                                    <div class="header-info-right ">
+                                    <ul class="header-social" >
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                         <li> <a href="#"><i class="fab fa-pinterest-p"></i></a></li>
                                     </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -55,16 +56,16 @@
                 </div>
                 <div class="header-mid d-none d-md-block">
                     <div class="container">
-                        <div class="row d-flex align-items-center">
+                        <div class="row d-flex align-items-center" >
                             <!-- Logo -->
                             <div class="col-xl-3 col-lg-3 col-md-3">
                                 <div class="logo">
-                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/img/logo/logo_AANwesPNG.png" alt="" width="180px" height="130px" style=" margin:0px; padding:0px;"></a>
                                      </div>
                             </div>
                             <div class="col-xl-9 col-lg-9 col-md-9">
                                 <div class="header-banner f-right ">
-                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="assets/img/hero/header_card.jpg" alt=""></a>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/img/hero/header_card.jpg" alt=""></a>
                                     
                                 </div>
                             </div>
@@ -76,8 +77,8 @@
                         <div class="row align-items-center">
                             <div class="col-xl-10 col-lg-10 col-md-12 header-flex">
                                 <!-- sticky -->
-                                <div class="sticky-logo">
-                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <div class="sticky-logo ml-3" >
+                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/img/logo/logo_AANwesPNG.png" alt="" width="160px" height="130px" style=" margin-top:-30px;"></a>
                                 </div>
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-md-block">
@@ -89,6 +90,8 @@
                                             <li><a asp-area="" asp-controller="Home" asp-action="Latest_news">Latest News</a></li>
                                             <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                                             <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                                            <li><a asp-area="" asp-controller="NewsArticles" asp-action="Index">NewsAritcle</a></li>
+                                            <li><a asp-area="" asp-controller="Categories" asp-action="Index">Category</a></li>
                                             <li>
                                                 <a href="#">Pages</a>
                                                 <ul class="submenu">
@@ -141,8 +144,8 @@
                             <div class="single-footer-caption">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
-                                </div>
+                                    <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/assets/img/logo/logo_AANwesPNG.png" alt="" width="200px" height="170px" style="border-radius:50%; margin:0px; padding:0px; margin-top:-90px;"></a>
+                                    </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
                                         <p>Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for con sectetuer sodales adipisci for cursus fames lectus tempor da blandit gravida sodales  Suscipit mauris pede for sectetuer.</p>
@@ -173,7 +176,7 @@
                                             <div class="form-icon">
                                                 <button type="submit" name="submit" id="newsletter-submit"
                                                         class="email_icon newsletter-submit button-contactForm">
-                                                    <img src="assets/img/logo/form-iocn.png" alt="">
+                                                    <img src="~/assets/img/logo/form-iocn.png" alt="">
                                                 </button>
                                             </div>
                                             <div class="mt-10 info"></div>
@@ -190,12 +193,12 @@
                             </div>
                             <div class="instagram-gellay">
                                 <ul class="insta-feed">
-                                    <li><a href="#"><img src="assets/img/post/instra1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/post/instra2.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/post/instra3.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/post/instra4.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/post/instra5.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="assets/img/post/instra6.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra1.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra2.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra3.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra4.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra5.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="~/assets/img/post/instra6.jpg" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -212,7 +215,7 @@
                             <div class="footer-copy-right">
                                 <p>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This is made by Ahmed and Ahktar <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">GUSC_Tank</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>
@@ -242,7 +245,7 @@
     <script src="~/assets/js/popper.min.js"></script>
     <script src="~/assets/js/bootstrap.min.js"></script>
     <!-- Jquery Mobile Menu -->
-    <script src="~/assets/js/jquery.slicknav.min.js"></script>
+    <script src="/assets/js/jquery.slicknav.min.js"></script>
 
     <!-- Jquery Slick , Owl-Carousel Plugins -->
     <script src="~/assets/js/owl.carousel.min.js"></script>

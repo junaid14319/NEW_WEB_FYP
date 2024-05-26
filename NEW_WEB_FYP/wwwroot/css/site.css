@@ -20,3 +20,9 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+#LInkIsUsedRred {
+    color: red;
+    text-decoration: none;
+    font-size: 30px;
+}
