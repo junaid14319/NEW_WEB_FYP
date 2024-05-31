@@ -1,0 +1,78 @@
+﻿@model NEW_WEB_FYP.Models.ViewModels.NewsArticleVm
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="CreateUpdate" asp-controller="NewsArticle" class="btn btn-success" >Create New</a>
+</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Category Name
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Content
+            </th>
+            <th>
+                Created Date
+            </th>
+            <th>
+                Updated Date
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var newsArticle in Model.NewsArticles)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.Category.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.Content)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => newsArticle.UpdatedDate)
+                </td>
+                <td>
+                    <a asp-action="CreateUpdate" class="btn btn-primary" asp-route-id="@newsArticle.NewsId">Update</a> |
+                    <a asp-action="Details" class="btn btn-info" asp-route-id="@newsArticle.NewsId">Details</a> |
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@newsArticle.NewsId">Delete</a>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+  </table>
+
+
+
+
+@section scripts{
+    <script src="~/js/Products.js"></script>
+
+}
+    
+
